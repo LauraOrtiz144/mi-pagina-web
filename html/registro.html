@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body class="body1">
+
+  <div class="main-container">
+    <a href="login.html" class="volver-btn">← Volver</a>
+    <div class="register-info">
+      <h2>Únete a I-Work</h2>
+      <p>Regístrate para encontrar oportunidades de trabajo cerca de ti. Solo necesitas tus datos personales para empezar.</p>
+    </div>
+
+    <div class="register-form-section">
+      <h2>Crea tu cuenta</h2>
+      <form id="register-form" class="form-layout">
+        <!-- Fila 1: Nombre completo -->
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="register-nombre">Nombre completo</label>
+            <input type="text" id="register-nombre" name="nombre" placeholder="Tu nombre y apellidos" autocomplete="name" required>
+          </div>
+        </div>
+
+        <!-- Fila 2: Fecha nacimiento + Cédula -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="register-fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" id="register-fecha-nacimiento" name="fecha_nacimiento" autocomplete="bday" required>
+          </div>
+          <div class="form-group">
+            <label for="register-cedula">Número de cédula</label>
+            <input type="text" id="register-cedula" name="cedula" placeholder="Ej. 1234567890" inputmode="numeric" autocomplete="off" required>
+          </div>
+        </div>
+
+        <!-- Fila 3: Fecha y Ciudad de expedición -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="register-fecha-expedicion">Fecha de expedición</label>
+            <input type="date" id="register-fecha-expedicion" name="fecha_expedicion" required>
+          </div>
+          <div class="form-group">
+            <label for="register-ciudad-expedicion">Ciudad de expedición</label>
+            <input list="ciudades" id="register-ciudad-expedicion" name="ciudad_expedicion" placeholder="Ej. Medellín" autocomplete="address-level2" required>
+            <datalist id="ciudades">
+              <option value="Bogotá">
+              <option value="Medellín">
+              <option value="Cali">
+              <option value="Barranquilla">
+              <option value="Cartagena">
+            </datalist>
+          </div>
+        </div>
+
+        <!-- Fila 4: País de expedición -->
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="register-pais-expedicion">País de expedición</label>
+            <input list="paises" id="register-pais-expedicion" name="pais_expedicion" placeholder="Ej. Colombia" autocomplete="country-name" required>
+            <datalist id="paises">
+              <option value="Colombia">
+              <option value="Venezuela">
+              <option value="Ecuador">
+              <option value="Perú">
+              <option value="México">
+            </datalist>
+          </div>
+        </div>
+
+        <!-- Fila 5: Email + Password -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="register-email">Correo electrónico</label>
+            <input type="email" id="register-email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Contraseña</label>
+            <input type="password" id="register-password" name="password" placeholder="Debe tener al menos 8 caracteres" autocomplete="new-password" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="button-register">Registrarse</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
+

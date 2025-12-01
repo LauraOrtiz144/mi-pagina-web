@@ -1,0 +1,99 @@
+<!-- postular.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postularme a Vacante | I-Work</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body class="body1">
+  <div class="main-container">
+    <a href="/" class="volver-btn">← Volver</a>
+    <div class="register-info">
+      <h2>Postúlate a esta vacante</h2>
+      <p>Completa tus datos para postularte. La persona que publicó la vacante revisará tu información y se pondrá en contacto contigo.</p>
+      
+      <!-- Información de la vacante -->
+      <div id="vacante-info" class="vacante-preview">
+        <h3>Información de la vacante</h3>
+        <div id="vacante-detalles">
+          <!-- Se llenará dinámicamente -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="register-form-section">
+      <h2>Tus datos de contacto</h2>
+      <form id="postulacion-form" class="form-layout">
+        <!-- Fila 1: Nombre completo -->
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="postular-nombre">Nombre completo</label>
+            <input type="text" id="postular-nombre" name="nombre" placeholder="Tu nombre y apellidos" autocomplete="name" required>
+          </div>
+        </div>
+        
+        <!-- Fila 2: Email + Teléfono -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="postular-email">Correo electrónico</label>
+            <input type="email" id="postular-email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="postular-telefono">Teléfono</label>
+            <input type="tel" id="postular-telefono" name="telefono" placeholder="Ej. 300 123 4567" autocomplete="tel" required>
+          </div>
+        </div>
+        
+        <!-- Fila 3: Ubicación -->
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="postular-ubicacion">Ubicación actual</label>
+            <input list="ciudades" id="postular-ubicacion" name="ubicacion" placeholder="Ej. Medellín, Antioquia" autocomplete="address-level2" required>
+            <datalist id="ciudades">
+              <option value="Bogotá, Cundinamarca">
+              <option value="Medellín, Antioquia">
+              <option value="Cali, Valle del Cauca">
+              <option value="Barranquilla, Atlántico">
+              <option value="Cartagena, Bolívar">
+              <option value="Bucaramanga, Santander">
+              <option value="Pereira, Risaralda">
+              <option value="Santa Marta, Magdalena">
+            </datalist>
+          </div>
+        </div>
+        
+        <!-- Fila 4: Mensaje de presentación -->
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="postular-mensaje">Mensaje de presentación</label>
+            <textarea id="postular-mensaje" name="mensaje" rows="4" placeholder="Cuéntale al empleador por qué eres la persona ideal para este trabajo..." required></textarea>
+          </div>
+        </div>
+        
+        <!-- Fila 5: Disponibilidad -->
+        <div class="form-row">
+          <div class="form-group full">
+            <label for="postular-disponibilidad">Disponibilidad</label>
+            <select id="postular-disponibilidad" name="disponibilidad" required>
+              <option value="">Selecciona tu disponibilidad</option>
+              <option value="inmediata">Disponibilidad inmediata</option>
+              <option value="esta-semana">Esta semana</option>
+              <option value="proxima-semana">Próxima semana</option>
+              <option value="este-mes">Este mes</option>
+              <option value="a-convenir">A convenir</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <button type="submit" class="button-register">Enviar Postulación</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/js/postular.js"></script>
+</body>
+</html>
