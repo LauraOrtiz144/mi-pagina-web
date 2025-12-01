@@ -97,14 +97,16 @@ document.addEventListener("DOMContentLoaded", () => {
       btnModal.addEventListener("click", () => {
         console.log('Cerrando modal y redirigiendo a login');
         modal.remove();
-        window.location.href = "/html/login.html"; // Cambiado a login.html
+        window.location.href = "https://lauraortiz144.github.io/mi-pagina-web/html/login.html";
+ // Cambiado a login.html
       });
       
       // Cerrar modal al hacer click fuera
       modal.addEventListener('click', (e) => {
         if (e.target === modal) {
           modal.remove();
-          window.location.href = "/html/login.html"; // Cambiado a login.html
+          window.location.href = "https://lauraortiz144.github.io/mi-pagina-web/html/login.html";
+ // Cambiado a login.html
         }
       });
       
@@ -167,4 +169,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   console.log('Inicialización de main.js completada');
+
 });
