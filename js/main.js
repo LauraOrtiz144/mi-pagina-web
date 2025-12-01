@@ -149,7 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           // Login normal desde el nav - volver al index
           console.log('Login normal, redirigiendo a index');
-          window.location.href = "index.html";
+          window.location.href = "../index.html";
+
         }
       } else {
         alert('Credenciales incorrectas');
@@ -169,4 +170,5 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log('Inicialización de main.js completada');
 
 });
+
 
