@@ -97,14 +97,14 @@ document.addEventListener("DOMContentLoaded", () => {
       btnModal.addEventListener("click", () => {
         console.log('Cerrando modal y redirigiendo a login');
         modal.remove();
-        window.location.href = "/html/login.html"; // Cambiado a login.html
+        window.location.href = "../html/login.html"; // Cambiado a login.html
       });
       
       // Cerrar modal al hacer click fuera
       modal.addEventListener('click', (e) => {
         if (e.target === modal) {
           modal.remove();
-          window.location.href = "/html/login.html"; // Cambiado a login.html
+          window.location.href = "../html/login.html"; // Cambiado a login.html
         }
       });
       
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           // Login normal desde el nav - volver al index
           console.log('Login normal, redirigiendo a index');
-          window.location.href = "/index.html";
+          window.location.href = "../index.html";
         }
       } else {
         alert('Credenciales incorrectas');
@@ -161,10 +161,11 @@ document.addEventListener("DOMContentLoaded", () => {
       goToRegister.addEventListener('click', (e) => {
         e.preventDefault();
         console.log('Redirigiendo a registro');
-        window.location.href = "/html/registro.html";
+        window.location.href = "../html/registro.html";
       });
     }
   }
   
   console.log('Inicialización de main.js completada');
+
 });
