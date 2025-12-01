@@ -1,0 +1,145 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | I-Work - Conectando Talentos</title>
+  <link rel="stylesheet" href="/css/estilos.css" />
+</head>
+<body>
+  <header class="dashboard-header">
+    <div class="container">
+      <h1 class="logo">I-Work</h1>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Mi perfil</a></li>
+          <li><a href="#">Trabajos</a></li>
+          <li><a href="html/crear-vacante.html"> Publicar vacante</a></li>
+          <li><a href="#" id="btn-soporte">Soporte</a></li>
+          <li class="login1"><a href="#" id="enlaceLogin">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h2>Conecta con oportunidades reales</h2>
+        <p>I-Work es más que una plataforma de trabajo: somos el puente entre el talento informal y las oportunidades reales.</p>
+        <p>Nuestra comunidad está formada por personas que dominan oficios tradicionales: desde el plomero hasta la cocinera del barrio. Aquí, tu habilidad es tu credencial.</p>
+        <p>Funciona como las apps que ya conoces: simple, rápido y confiable. Publica tu servicio, encuentra clientes cerca de ti y recibe tu pago de forma segura.</p>
+      </div>
+      <div class="description-image">
+        <img src="/images/personas-reunidas.jpg" alt="Personas reunidas colaborando"/>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Cómo funciona -->
+    <section class="how-it-works">
+      <div class="container text-center">
+        <h3 class="section-title">¿Cómo funciona I-Work?</h3>
+        <p class="section-subtitle">Tan fácil como pedir un taxi, pero para trabajar o contratar</p>
+        <div class="steps">
+          <div class="step">
+            <img src="/images/register.png" alt="Registro" />
+            <h4>1. Regístrate Gratis</h4>
+            <p>Crea tu perfil con tus datos y habilidades.</p>
+          </div>
+          <div class="step">
+            <img src="/images/search.png" alt="Buscar trabajos" />
+            <h4>2. Conecta</h4>
+            <p>Encuentra trabajos o publica tu servicio.</p>
+          </div>
+          <div class="step">
+            <img src="/images/money.png" alt="Dinero" />
+            <h4>3. Trabaja y Cobra</h4>
+            <p>Recibe tu pago seguro y tu calificación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Acciones -->
+    <section class="options">
+      <div class="container">
+        <h3 class="section-title">¿Qué te gustaría hacer hoy?</h3>
+        <div class="option-cards">
+          <div class="option-card">
+            <h4>🚀 Publicar vacante</h4>
+            <p>Publica tu solicitud y recibe propuestas cerca de ti.</p>
+            <button id="btn-publicar">Publicar vacante</button>
+          </div>
+          <div class="option-card">
+            <h4>💼 Postularse a una vacante</h4>
+            <p>Encuentra trabajos que se adapten a tus habilidades.</p>
+            <button id="btn-postular">Postúlate ahora</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios más solicitados -->
+    <section class="services-section">
+      <div class="container text-center">
+        <h3 class="section-title">Servicios Más Solicitados</h3>
+        <p class="section-subtitle">Encuentra oportunidades en las áreas con mayor demanda</p>
+
+        <div class="services-grid">
+          <div class="service-card"><div class="service-icon">🔧</div><h4>Plomería y Electricidad</h4><p>Reparaciones, instalaciones y mantenimiento.</p></div>
+          <div class="service-card"><div class="service-icon">🛠️</div><h4>Carpintería y Muebles</h4><p>Armado, reparaciones y trabajos personalizados.</p></div>
+          <div class="service-card"><div class="service-icon">👕</div><h4>Lavandería y Limpieza</h4><p>Servicios para hogares y oficinas.</p></div>
+          <div class="service-card"><div class="service-icon">🚗</div><h4>Transporte y Logística</h4><p>Mudanzas y entregas rápidas.</p></div>
+          <div class="service-card"><div class="service-icon">🍳</div><h4>Cocina y Catering</h4><p>Eventos, comidas y servicios gastronómicos.</p></div>
+          <div class="service-card"><div class="service-icon">🎨</div><h4>Pintura y Decoración</h4><p>Interiores, exteriores y arte decorativo.</p></div>
+        </div>
+      </div>
+
+      <div class="cta-box text-center">
+        <h3>¡Únete a nuestra comunidad!</h3>
+        <p>Miles ya generan ingresos con sus habilidades. Forma parte de la revolución del trabajo flexible.</p>
+        <button class="btn-primary" id="crearCuentaBtn">Crear Cuenta Gratis</button>
+      </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="mission-vision">
+      <div class="container mv-container">
+        <div class="mv-card">
+          <h3><span class="mv-icon">🎯</span>Nuestra Misión</h3>
+          <p>Democratizar el acceso al trabajo digno conectando personas con habilidades reales con quienes necesitan sus servicios.</p>
+          <p>Eliminar barreras del empleo formal y crear una economía más inclusiva.</p>
+        </div>
+        <div class="mv-card">
+          <h3><span class="mv-icon">🌟</span>Nuestra Visión</h3>
+          <p>Ser la plataforma líder de trabajo informal en LATAM, transformando vidas mediante oportunidades accesibles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-card"><h4>+15.000</h4><p>Trabajos completados</p></div>
+        <div class="stat-card"><h4>+8.500</h4><p>Trabajadores activos</p></div>
+        <div class="stat-card"><h4>4.8⭐</h4><p>Calificación promedio</p></div>
+        <div class="stat-card"><h4>24/7</h4><p>Soporte disponible</p></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vacantes dinámicas -->
+  <section id="vacantes-container" class="options" style="display: none;">
+    <div class="container">
+      <h3>Vacantes Disponibles</h3>
+      <div id="lista-vacantes"></div>
+    </div>
+  </section>
+  <script type="module" src="/js/dashboard.js"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
